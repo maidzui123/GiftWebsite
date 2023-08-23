@@ -1,0 +1,227 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: url(../images/background.jpg);
+    background-size: contain;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+html {
+    transition: 0.5s;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.instructor-outer {
+    display: flex;
+    padding-top: 50px;
+}
+
+.instructor-main img {
+    width: 200px;
+    height: 200px;
+}
+
+.instructor-say {
+    position: relative;
+    top: -30px;
+    left: -80px;
+}
+
+.instructor-say img {
+    height: 100px;
+}
+
+.instructor-say p {
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    font-size: 14px;
+    margin: 0;
+    width: 180px;
+    height: 100%;
+}
+
+.instructor-btn {
+    height: 50px;
+    transform: scale(1);
+    position: absolute;
+    top: 200px;
+    left: 225px;
+    color: #FFF;
+    background-color: #c9a87f;
+    border: 1px #c9a87f solid;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.instructor-btn:focus {
+    box-shadow: none;
+}
+
+.instructor-btn:hover {
+    transform: scale(1.05);
+    background-color: rgba(201, 168, 127, 0.7);
+    border: 1px #c9a87f solid;
+    color: #FFF;
+}
+
+.cake-outer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.none {
+    display: none !important;
+}
+
+.cake-pray_outer {
+    display: flex;
+    height: 300px;
+}
+
+.cake-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-fire_outer {
+    position: relative;
+    z-index: 1;
+}
+
+.cake-fire {
+    display: inline-block;
+}
+
+.cake-fire img {
+    border-radius: 80%;
+    /* box-shadow: 0px 5px 30px rgba(255, 179, 0, 0.9); */
+    animation: lightFlash 0.5s linear infinite;
+}
+
+.cake-fire1 {
+    position: absolute;
+    top: -96px;
+    left: -120px
+}
+
+.cake-fire2 {
+    top: -96px;
+    position: absolute;
+    left: -44px;
+}
+
+.cake-fire3 {
+    position: absolute;
+    top: -96px;
+    left: 34px;
+}
+
+.cake-main {
+    position: relative;
+    top: -124px;
+}
+
+.btn-cake {
+    margin-top: 50px;
+    outline: none;
+    padding: 20px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border: #ccc 1px solid;
+    color: #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left: 12px;
+    transition: 0.5s;
+}
+
+.btn-cake:disabled {
+    background: rgba(255, 255, 255, 0.4);
+    cursor: not-allowed;
+}
+
+.btn-light,
+.btn-light:active,
+.btn-light:focus {
+    background: rgb(6, 255, 151);
+    transform: scale(1);
+    color: #FFF;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    ;
+}
+
+.btn-light:hover {
+    color: #FFF;
+    transform: scale(1.05);
+    background: rgba(6, 255, 151, 0.8);
+}
+
+.btn-light:focus {
+    box-shadow: none;
+}
+
+.btn-blow,
+.btn-blow:active,
+.btn-blow:focus {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(253, 173, 29, 1) 39%, rgba(247, 132, 4, 1) 100%);
+    transform: scale(1);
+    color: #FFF;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.btn-blow:hover {
+    color: #FFF;
+    transform: scale(1.05);
+}
+.btn-present,
+.btn-present:active,
+.btn-present:focus {
+    background: #000;
+    transform: scale(1);
+    color: #FFF;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    ;
+}
+
+.btn-present:hover {
+    color: #FFF;
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-present:focus {
+    box-shadow: none;
+}
+.instructor-pray1 img,
+.instructor-pray2 img {
+    width: 300px;
+}
+
+@keyframes lightFlash {
+    0% {
+        box-shadow: 0px 5px 30px rgba(255, 179, 0, 0.9);
+    }
+    50% {
+        box-shadow: 0px 5px 30px rgba(255, 179, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0px 5px 30px rgba(255, 179, 0, 0.9);
+
+    }
+  }
